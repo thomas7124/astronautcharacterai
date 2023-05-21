@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talk to the Astronaut</title>
+</head>
+<body>
+    <h1>Talk to the Astronaut!</h1>
+    <h2>*text generation might take up to a minute*</h1>
+    <div id="game-container">
+        
+        <form method="POST" action="/play">
+            <input type="text" name="user_input" autofocus>
+            <button type="submit">Submit</button>
+        </form>
+        <p>{{ game_text }}</p>
+    </div>
+</body>
+</html>
